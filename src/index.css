@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Satisfy", cursive;
+
+  src: url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+}
+
+.font-warungpedia {
+  font-family: "Satisfy", cursive;
+}
+
+@layer components {
+  .warung-pedia-font-style {
+    @apply font-warungpedia text-3xl text-green-500 font-semibold;
+  }
+
+  .btn-custom-secondary {
+    @apply btn-secondary bg-gray-300 text-gray-500 border-gray-300 hover:border-gray-200 hover:bg-gray-300;
+  }
+
+  .cm-tab-active {
+    @apply border-b-2 border-primary text-primary;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
